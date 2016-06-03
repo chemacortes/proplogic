@@ -1,6 +1,6 @@
-package proposionallogic
+package proplogic
 
-import scala.scalajs.js.JSApp
+import scalajs.js.JSApp
 
 
 object ProposionalLogic {
@@ -17,8 +17,9 @@ object MyApp extends JSApp {
 
     def main() = {
 
-        println("Hola")
-        println(true :=> false :=> true)
+      val res = (true :=> false) :=> true
+      println(res)
+      println(res.getClass) // --> boolean
 
     }
 }
